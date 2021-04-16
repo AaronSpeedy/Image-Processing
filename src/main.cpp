@@ -5,6 +5,6 @@
 #include "image.h"
 int main()
 {
-    Image image = image("image", 100, 100);
+    Image image = Image("image", 100, 100);
     return 0;
 }
