@@ -1,5 +1,6 @@
 class Image
 {
+    public:
     std::vector<std::vector<int>> pixels;
     int width;
     int height;
