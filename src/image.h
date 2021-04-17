@@ -12,9 +12,9 @@ class Image
         height = sizeYp;
         for(int i = 0; i < width * height; i++)
         {
-            pixels[i][0].push_back(0);
-            pixels[i][1].push_back(0);
-            pixels[i][2].push_back(0);
+            pixels[i][0] = 0;
+            pixels[i][1] = 0;
+            pixels[i][2] = 0;
         }
     }
     void editPixel(int X, int Y, int r, int g, int b)
