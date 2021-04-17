@@ -25,7 +25,7 @@ class Image
     }
     void ~Image()
     {
-        ofstream imageFile(name + ".ppm");
+        std::ofstream imageFile(name + ".ppm");
         imageFile << "P3\n";
         imageFile << width << " " << height << "\n";
         for(int i = 0; i < pixels.size(); i++)
