@@ -5,7 +5,7 @@ class Image
     int width;
     int height;
     std::string name; 
-    void Image(std::string namep, int sizeXp, int sizeYp)
+    Image(std::string namep, int sizeXp, int sizeYp)
     {
         name = namep;
         width = sizeXp;
@@ -23,7 +23,7 @@ class Image
         pixels[X + width*Y][1] = g;
         pixels[X + width*Y][2] = b;
     }
-    void ~Image()
+    ~Image()
     {
         std::ofstream imageFile(name + ".ppm");
         imageFile << "P3\n";
