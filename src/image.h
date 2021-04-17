@@ -10,7 +10,7 @@ class Image
         name = namep;
         width = sizeXp;
         height = sizeYp;
-        for(int i = 0; i < sizeX * sizeX; i++)
+        for(int i = 0; i < width * height; i++)
         {
             pixels[i][0].push_back(0);
             pixels[i][1].push_back(0);
