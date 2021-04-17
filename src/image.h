@@ -34,6 +34,6 @@ class Image
             imageFile << pixels[i][1] << " ";
             imageFile << pixels[i][2] << " ";
         }
-        file.close();
+        imageFile.close();
     }
 }
