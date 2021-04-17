@@ -25,14 +25,14 @@ class Image
     }
     void ~Image()
     {
-        ofstream file(name + ".ppm");
-        file << "P3\n";
-        file << width << " " << height << "\n";
+        ofstream imageFile(name + ".ppm");
+        imageFile << "P3\n";
+        imageFile << width << " " << height << "\n";
         for(int i = 0; i < pixels.size(); i++)
         {
-            file << pixels[i][0] << " ";
-            file << pixels[i][1] << " ";
-            file << pixels[i][2] << " ";
+            imageFile << pixels[i][0] << " ";
+            imageFile << pixels[i][1] << " ";
+            imageFile << pixels[i][2] << " ";
         }
         file.close();
     }
