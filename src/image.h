@@ -12,9 +12,8 @@ class Image
         height = sizeYp;
         for(int i = 0; i < width * height; i++)
         {
-            pixels[i].push_back(0);
-            pixels[i].push_back(0);
-            pixels[i].push_back(0);
+            std::vector<int> vec = {0, 0, 0};
+            pixels[i].push_back(vec);
         }
     }
     void editPixel(int X, int Y, int r, int g, int b)
